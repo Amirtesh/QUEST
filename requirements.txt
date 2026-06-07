@@ -1,0 +1,33 @@
+# QUEST Python requirements
+# Install via: pip install -r requirements.txt
+# External binaries (xtb, crest, obabel, vina, prank) must be installed separately.
+# See README.md for full installation instructions.
+
+# ---------------------------------------------------------------------------
+# Core Python dependencies
+# ---------------------------------------------------------------------------
+
+# CLI framework
+click>=8.0
+
+# Tabular results and CSV output
+pandas>=1.5
+
+# ---------------------------------------------------------------------------
+# Cheminformatics
+# ---------------------------------------------------------------------------
+
+# RDKit is the primary cheminformatics dependency. It is not available on PyPI
+# and must be installed via conda-forge:
+#   conda install -c conda-forge rdkit
+#
+# Uncomment the line below only if you are using a pip-installable build of
+# RDKit (e.g. the rdkit-pypi package on non-conda environments):
+# rdkit-pypi>=2022.3
+
+# ---------------------------------------------------------------------------
+# Development and testing (optional)
+# ---------------------------------------------------------------------------
+
+# pytest>=7.0
+# pytest-cov>=4.0
